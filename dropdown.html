@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="dropdown">
+        <h2>Hover Me</h2>
+        <div class="content">
+            <p>Hi world</p>
+            <h2>My Boss</h2>
+        </div>
+    </div>
+
+
+
+    <style>
+        .content {
+            display: none;
+            background-color: aqua;
+            position: absolute;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .dropdown {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown:hover .content {
+            display: block;
+        }
+    </style>
+
+</body>
+
+</html>

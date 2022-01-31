@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dd2</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        ul.nav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        ul.nav>li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        ul li a:hover {
+            background-color: cornflowerblue;
+            color: black;
+        }
+
+        .dropdown-content,
+        .dropdown-content1,
+        .dropdown-content2,
+        .ddc3 {
+            display: none;
+            position: absolute;
+            margin: 0%;
+            background-color: cyan;
+            color: black;
+
+        }
+
+
+        .dropdown:hover .dropdown-content,
+        .dropdown1:hover .dropdown-content1,
+        .dropdown2:hover .dropdown-content2,
+        .dd3:hover .ddc3 {
+            display: block;
+
+        }
+
+        .dropdown-content1,
+        .dropdown-content2,
+        .ddc3 {
+            left: 100%;
+            top: 75%;
+        }
+
+        /* 
+        ul li p:hover {
+            background-color: cornflowerblue;
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="#">html</a></li>
+        <li><a href="#">css</a></li>
+        <li><a href="#">js</a></li>
+        <li><a href="#">jquery</a></li>
+        <li class="dropdown"><a href="#">php</a>
+            <ul class="dropdown-content">
+                <li><a href="#">cake php</a></li>
+                <li><a href="#">codeignitor</a></li>
+                <li class="dropdown1"><a href="#" class="dd2">php</a>
+                    <ul class="dropdown-content1">
+                        <li><a href="#">cake php</a></li>
+                        <li><a href="#">codeignitor</a></li>
+                        <li class="dropdown2"><a href="#" class="dd2">php</a>
+                            <ul class="dropdown-content2">
+                                <li><a href="#">cake php</a></li>
+                                <li><a href="#">codeignitor</a></li>
+                                <li class="dd3"><a href="#">java</a>
+                                    <ul class="ddc3">
+                                        <li><a href="#">cake php</a></li>
+                                        <li><a href="#">codeignitor</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+</body>
+
+</html>
